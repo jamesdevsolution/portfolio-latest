@@ -42,12 +42,9 @@ const QuoteSection = () => {
         ref={quoteRef}
         className={`font-medium text-4xl md:text-5xl text-center ${willChange ? "will-change-opacity" : ""}`}
       >
-        I’m passionate about building robust and scalable{" "}
-        <span className="text-strong font-bold">full-stack applications</span> and take pride in writing clean, efficient code
-        that solves real problems. With hands - on experience across multiple technologies, I strive to deliver solutions that
-        are both functional and maintainable .
+        I’m passionate about building <span className="text-strong font-bold">scalable full-stack apps</span> and writing clean, 
+        efficient code to solve real problems.
       </h1>
-
 
     </div>
   );
