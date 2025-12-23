@@ -64,15 +64,6 @@ export const PROJECTS: IProject[] = [
     tech: ["react", "next", "tailwind", "typescript", "mongodb"],
   },
   {
-    name: "GoManga - Free Manga Reader HD",
-    image: "/projects/gomanga.png",
-    blurImage: "/projects/blur/dlt-website-blur.png",
-    description: "Updated Manga Chapters for Free! No ADS!",
-    gradient: ["#b61c1c", "#272128"],
-    url: "https://gomanga.vercel.app",
-    tech: ["next", "react", "tailwind", "typescript", "mongodb"],
-  },
-  {
     name: "SSSANIME - Free Anime Streaming Website HD",
     image: "/projects/sssanime.png",
     blurImage: "/projects/blur/figgen-blur.png",
@@ -80,6 +71,15 @@ export const PROJECTS: IProject[] = [
     gradient: ["#282639", "#da0667"],
     url: "https://sssanime.vercel.app",
     tech: ["typescript", "next", "tailwind", "react", "mongodb"],
+  },
+  {
+    name: "GoManga - Free Manga Reader HD",
+    image: "/projects/gomanga.png",
+    blurImage: "/projects/blur/dlt-website-blur.png",
+    description: "Updated Manga Chapters for Free! No ADS!",
+    gradient: ["#b61c1c", "#272128"],
+    url: "https://gomanga.vercel.app",
+    tech: ["next", "react", "tailwind", "typescript", "mongodb"],
   },
   {
     name: "ScraperGo - Free API to fetch Korean Manwhas!",
