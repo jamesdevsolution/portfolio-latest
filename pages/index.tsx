@@ -92,7 +92,7 @@ export default function Home() {
           {/* Spacer */}
           </div>
 
-          <Transition text="" bold="My Journey" slideText="Timeline Timeline " />
+          <Transition text="" bold="My Journey" slideText="Timeline Timeline Timeline Timeline " />
 
           <TimelineSection isDesktop={isDesktop} />
 
