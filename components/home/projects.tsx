@@ -81,28 +81,28 @@ const ProjectsSection = ({ isDesktop }: IDesktop) => {
 
     sethorizontalAnimationEnabled(isDesktop && matches);
 
-    if (isDesktop && matches) {
-      [projectsTimeline, projectsScrollTrigger] = initProjectsAnimation(
-        targetSectionRef,
-        sectionTitleElementRef
-      );
-    } else {
-      const projectWrapper = targetSectionRef.current.querySelector(
-        ".project-wrapper"
-      ) as HTMLDivElement;
-      const parentPadding = window
-        .getComputedStyle(targetSectionRef.current)
-        .getPropertyValue("padding-left");
+    // if (isDesktop && matches) {
+    [projectsTimeline, projectsScrollTrigger] = initProjectsAnimation(
+      targetSectionRef,
+      sectionTitleElementRef
+    );
+    // } else {
+    //   const projectWrapper = targetSectionRef.current.querySelector(
+    //     ".project-wrapper"
+    //   ) as HTMLDivElement;
+    //   const parentPadding = window
+    //     .getComputedStyle(targetSectionRef.current)
+    //     .getPropertyValue("padding-left");
 
-      targetSectionRef.current.style.setProperty("width", "100%");
-      projectWrapper.classList.add("overflow-x-auto");
-      projectWrapper.style.setProperty("width", `calc(100vw)`);
-      projectWrapper.style.setProperty("padding", `0 ${parentPadding}`);
-      projectWrapper.style.setProperty(
-        "transform",
-        `translateX(-${parentPadding})`
-      );
-    }
+    //   targetSectionRef.current.style.setProperty("width", "100%");
+    //   projectWrapper.classList.add("overflow-x-auto");
+    //   projectWrapper.style.setProperty("width", `calc(100vw)`);
+    //   projectWrapper.style.setProperty("padding", `0 ${parentPadding}`);
+    //   projectWrapper.style.setProperty(
+    //     "transform",
+    //     `translateX(-${parentPadding})`
+    //   );
+    // }
 
     const [revealTimeline, revealScrollTrigger] =
       initRevealAnimation(targetSectionRef);

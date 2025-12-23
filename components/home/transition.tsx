@@ -77,9 +77,9 @@ const Transition = ({ text, bold, slideText }: { text: string, bold: string, sli
         let slidingAnim: ScrollTrigger | undefined
 
         const { matches } = window.matchMedia(NO_MOTION_PREFERENCE_QUERY)
-        if (matches) {
-            slidingAnim = initSlidingTextAnimation(sectionRef)
-        }
+        // if (matches) {
+        slidingAnim = initSlidingTextAnimation(sectionRef)
+        // }
 
         return () => {
             textAnim.kill()
