@@ -88,7 +88,9 @@ export default function Home() {
           <Transition text="" bold="My Works" slideText="Works Works Works Works Works Works Works Works Works Works Works Works" />
 
           <ProjectsSection isDesktop={isDesktop} />
-
+          <div className='w-[100vw] h-[300px]'>
+          {/* Spacer */}
+          </div>
 
           <Transition text="" bold="My Journey" slideText="Timeline Timeline Timeline Timeline Timeline Timeline Timeline Timeline" />
 
