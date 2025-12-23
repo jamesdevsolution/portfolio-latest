@@ -1,9 +1,3 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import { MENULINKS, PROJECTS } from "../../constants";
 import ProjectTile from "../common/project-tile";
@@ -123,17 +117,23 @@ const ProjectsSection = ({ isDesktop }: IDesktop) => {
 
   const renderSectionTitle = (): React.ReactNode => (
     <div
-      className={`flex flex-col inner-container  ${
-        willChange ? "will-change-transform" : ""
-      }`}
+      className={`flex flex-col inner-container  ${willChange ? "will-change-transform" : ""
+        }`}
       ref={sectionTitleElementRef}
     >
       <p className="section-title-sm seq">PROJECTS</p>
       <h1 className="section-heading seq mt-2">My Works</h1>
       <h2 className="text-2xl md:max-w-3xl w-full seq max-w-sm mt-2">
-        I have contributed in over 20+ projects ranging from Frontend
-        development, UI/UX design, Open Source, and Motion Graphics
+        I have <span className='text-[#E43D12]'>independently</span> built many{" "}
+        <span className="text-[#E43D12]">full-stack</span> projects, handling the{" "}
+        <span className="text-[#E43D12]">frontend</span>,{" "}
+        <span className="text-[#E43D12]">backend</span>,{" "}
+        <span className="text-[#E43D12]">APIs</span>,{" "}
+        <span className="text-[#E43D12]">security</span>,{" "}
+        <span className="text-[#E43D12]">database</span>, and{" "}
+        <span className="text-[#E43D12]">modern best practices</span>.
       </h2>
+
     </div>
   );
 
@@ -146,7 +146,7 @@ const ProjectsSection = ({ isDesktop }: IDesktop) => {
       ></ProjectTile>
     ));
 
-  const { ref: projectsSectionRef } = MENULINKS[1];
+  const { ref: projectsSectionRef } = MENULINKS[2];
 
   return (
     <section

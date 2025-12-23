@@ -1,9 +1,3 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 import { Dispatch, SetStateAction } from "react";
 import { MENULINKS } from "../../constants";
 
@@ -30,7 +24,7 @@ const Menu = ({
                 role="menuitem"
               >
                 <a
-                  className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
+                  className="link relative inline font-bold  text-5xl duration-300 hover:no-underline"
                   href={`#${el.ref}`}
                   onClick={setmenuVisible.bind(null, false)}
                 >

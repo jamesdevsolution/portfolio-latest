@@ -1,10 +1,4 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
-import { EMAIL, MENULINKS, SOCIAL_LINKS } from "../../constants";
+import { MENULINKS, SOCIAL_LINKS } from "../../constants";
 import Image from "next/image";
 import Button, { ButtonTypes } from "./button";
 
@@ -29,6 +23,9 @@ const Footer = () => {
         Connect with me on social media.
       </h1>
       <div className="flex mt-8">{renderSocialIcons()}</div>
+      <div className='text-black pt-6'>
+        Contact me : jamesdevsolution@gmail.com
+      </div>
       <div className="flex mt-8">
         <Button
           classes="mr-3"
@@ -38,22 +35,23 @@ const Footer = () => {
             target: "_blank",
             rel: "noreferrer",
           }}
-          href="/Ayush_Resume.pdf"
+          href="/James_Talamo.pdf"
         ></Button>
         <Button
           classes="ml-3"
           type={ButtonTypes.WHITE}
           name="Let's Talk"
-          href={SOCIAL_LINKS.topmate}
+          href={SOCIAL_LINKS.instagram}
           otherProps={{
             target: "_blank",
             rel: "noreferrer",
           }}
         ></Button>
       </div>
-      <h2 className="text-center text-sm sm:text-base mt-8">
-        Designed and Developed with ❤️ by Ayush
-      </h2>
+
+      <div className='text-gray-300 pt-6'>
+        This site looks best on desktop.
+      </div>
     </>
   );
 
@@ -64,15 +62,17 @@ const Footer = () => {
       className="w-full relative select-none bg-cover flex flex-col items-stretch"
       id={footerRef}
     >
-      <img
-        src="/footer-curve.svg"
-        alt="Footer"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 290"
         className="w-full"
-        loading="lazy"
-        height={290}
-        role="presentation"
-        width={1440}
-      />
+      >
+        <path
+          d="M0,0 C720,200 720,100 1440,290 L1440,0 L0,0 Z"
+          fill="#EBE9E1"
+        />
+      </svg>
+
       <div className="h-full w-full">
         <div className="section-container flex-col flex h-full justify-end z-10 items-center py-12">
           {renderFooterContent()}

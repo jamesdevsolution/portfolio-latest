@@ -1,9 +1,3 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 import { MENULINKS, SKILLS } from "../../constants";
 import Image from "next/image";
 import { MutableRefObject, useEffect, useRef, useState } from "react";
@@ -13,7 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const SKILL_STYLES = {
   SECTION:
     "w-full relative select-none mb-24 section-container py-12 flex flex-col justify-center",
-  SKILL_TITLE: "section-title-sm mb-4 seq",
+  SKILL_TITLE: "section-title-sm mb-4 ",
 };
 
 const SkillsSection = () => {
@@ -47,37 +41,14 @@ const SkillsSection = () => {
   }, [targetSection]);
 
   const renderSectionTitle = (): React.ReactNode => (
-    <div className="flex flex-col">
-      <p className="section-title-sm seq">SKILLS</p>
-      <h1 className="section-heading seq mt-2">My Skills</h1>
-      <h2 className="text-2xl md:max-w-2xl w-full seq mt-2">
-        I like to take responsibility to craft aesthetic user experience using
-        modern frontend architecture.{" "}
-      </h2>
-    </div>
-  );
-
-  const renderBackgroundPattern = (): React.ReactNode => (
-    <>
-      <div className="absolute right-0 -bottom-1/3 w-1/5 max-w-xs md:flex hidden justify-end">
-        <Image
-          src="/pattern-r.svg"
-          loading="lazy"
-          height={700}
-          width={320}
-          alt="pattern"
-        />
-      </div>
-      <div className="absolute left-0 -bottom-3.5 w-1/12 max-w-xs md:block hidden">
-        <Image
-          src="/pattern-l.svg"
-          loading="lazy"
-          height={335}
-          width={140}
-          alt="pattern"
-        />
-      </div>
-    </>
+    <h2 className="text-2xl md:max-w-2xl w-full seq mt-2 animate-fadeIn">
+      I build{" "}
+      <span className="text-[#E43D12] font-bold">FULL STACK APPLICATIONS</span>, combining{" "}
+      best <span className="text-[#E43D12] font-bold">frontend frameworks</span>,{" "}
+      latest <span className="text-[#E43D12] font-bold">backend architecture logic</span>,{" "}
+      updated <span className="text-[#E43D12] font-bold">API structure</span>, and{" "}
+      <span className="text-[#E43D12] font-bold">secure, user focused experience</span>.
+    </h2>
   );
 
   const renderSkillColumn = (
@@ -86,10 +57,10 @@ const SkillsSection = () => {
   ): React.ReactNode => (
     <>
       <h3 className={SKILL_STYLES.SKILL_TITLE}>{title}</h3>
+      {/* <h3 className="text-black">{title}</h3> */}
       <div
-        className={`flex flex-wrap seq ${
-          willChange ? "will-change-opacity" : ""
-        }`}
+        className={`flex flex-wrap seq ${willChange ? "will-change-opacity" : ""
+          }`}
       >
         {skills.map((skill) => (
           <Image
@@ -107,10 +78,9 @@ const SkillsSection = () => {
 
   return (
     <section className="relative">
-      {renderBackgroundPattern()}
       <div
         className={SKILL_STYLES.SECTION}
-        id={MENULINKS[2].ref}
+        id={MENULINKS[1].ref}
         ref={targetSection}
       >
         <div className="flex flex-col skills-wrapper">
@@ -126,6 +96,9 @@ const SkillsSection = () => {
               )}
             </div>
             <div>{renderSkillColumn("Other Skills", SKILLS.other)}</div>
+          </div>
+          <div className="">
+            {renderSkillColumn("BACKEND DEVELOPMENT", SKILLS.backend)}
           </div>
         </div>
       </div>

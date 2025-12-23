@@ -1,28 +1,22 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 export const METADATA = {
-  title: "Portfolio | Ayush Singh",
+  title: "James Talamo | Portfolio",
   description:
-    "I bridge the gap between design and development. I take responsibility to craft an aesthetic user experience using modern frontend architecture.",
-  siteUrl: "https://ayushsingh.net/",
+    "I am a full stack developer who bridges design, frontend, and backend development to build scalable, performant, and user-focused web applications.",
+  siteUrl: "https://jamestalamo.vercel.app",
 };
-
+// SKILLS 
 export const MENULINKS = [
   {
     name: "Home",
     ref: "home",
   },
   {
-    name: "Works",
-    ref: "works",
-  },
-  {
     name: "Skills",
     ref: "skills",
+  },
+  {
+    name: "Works",
+    ref: "works",
   },
   {
     name: "Timeline",
@@ -35,24 +29,17 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "I design and develop things",
-  "I develop modern frontend apps",
-  "I design dynamic user experience",
-  "I design and develop motion",
+  "I design and build full stack applications",
+  "I turn ideas into scalable systems",
+  "I craft modern user experiences",
+  "I develop end-to-end web solutions",
 ];
 
-export const EMAIL = "ayush.singh.xda@gmail.com";
+export const EMAIL = "jamesdevsolution@gmail.com";
 
 export const SOCIAL_LINKS = {
-  linkedin: "https://www.linkedin.com/in/alphaayush/",
-  github: "https://github.com/ayush013",
-  medium: "https://alphaayush.medium.com/",
-  instagram: "https://www.instagram.com/alphaayush/",
-  facebook: "https://www.facebook.com/ayush013",
-  dribbble: "https://dribbble.com/alphaayush",
-  behance: "https://www.behance.net/alphaayush/",
-  twitter: "https://twitter.com/ayush013",
-  topmate: "https://www.topmate.io/alphaayush/",
+  github: "https://github.com/jamesdevydev",
+  instagram: "https://www.instagram.com/jamesx4rr/"
 };
 
 export interface IProject {
@@ -65,133 +52,114 @@ export interface IProject {
   tech: string[];
 }
 
+//projects ko
 export const PROJECTS: IProject[] = [
   {
-    name: "FigGen - Figma to Code converter",
-    image: "/projects/figgen.jpg",
-    blurImage: "/projects/blur/figgen-blur.jpg",
-    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
-    gradient: ["#1F6582", "#1ABCFE"],
-    url: "https://www.figma.com/community/plugin/1065278044402066626",
-    tech: ["typescript", "figma", "tailwind"],
-  },
-  {
-    name: "myOKR Website",
-    image: "/projects/myokr.jpg",
+    name: "Toonstop - Free Webtoon Reader HD",
+    image: "/projects/toonstop.jpg",
     blurImage: "/projects/blur/myokr-blur.jpg",
-    description: "Marketing site for OKR Platform by huminos",
-    gradient: ["#153BB9", "#0E2C8B"],
-    url: "https://www.huminos.com/",
-    tech: ["react", "next", "gsap", "tailwind"],
+    description: "Korean Webtoon reader! No ADS!",
+    gradient: ["#ffbb00ff", "#ff9b29ff"],
+    url: "https://toonstop.vercel.app",
+    tech: ["react", "next", "tailwind", "typescript", "mongodb"],
   },
   {
-    name: "DLT Labs Website",
-    image: "/projects/dlt-website.jpg",
+    name: "GoManga - Free Manga Reader HD",
+    image: "/projects/gomanga.jpg",
     blurImage: "/projects/blur/dlt-website-blur.jpg",
-    description: "Marketing site with an Internal CMS from scratch",
-    gradient: ["#245B57", "#004741"],
-    url: "https://www.dltlabs.com/",
-    tech: ["figma", "angular", "gsap"],
+    description: "Updated Manga Chapters for Free! No ADS!",
+    gradient: ["#5b2424ff", "#ff0000ff"],
+    url: "https://gomanga.vercel.app",
+    tech: ["next", "react", "tailwind", "typescript", "mongodb"],
   },
   {
-    name: "DL Unify",
-    image: "/projects/dl-unify.jpg",
+    name: "SSSANIME - Free Anime Streaming Website HD",
+    image: "/projects/sssanime.jpg",
+    blurImage: "/projects/blur/figgen-blur.jpg",
+    description: "Your Home for High Quality HD Anime Streaming Website",
+    gradient: ["#1F6582", "#1ABCFE"],
+    url: "https://sssanime.vercel.app",
+    tech: ["typescript", "next", "tailwind", "react", "mongodb"],
+  },
+  {
+    name: "ScraperGo - Free API to fetch Korean Manwhas!",
+    image: "/projects/scrapergo.jpg",
     blurImage: "/projects/blur/dl-unify-blur.jpg",
-    description: "Built the application from zero to production 🚀",
+    description: "HD Images for Korean Manwha - Plug and Play!",
     gradient: ["#003052", "#167187"],
-    url: "https://dlunify.com/",
-    tech: ["tailwind", "angular", "gsap", "figma"],
+    url: "https://scrapergo.vercel.app",
+    tech: ["typescript", "tailwind", "next", "mongodb"],
   },
   {
-    name: "ngx-quill-upload",
-    image: "/projects/ngx-quill-upload.jpg",
+    name: "GoManga Api - Free API to fetch updated Manga",
+    image: "/projects/gomanga-api.jpg",
     blurImage: "/projects/blur/ngx-quill-upload-blur.jpg",
     description: "NPM Package for Quill JS uploads from Angular",
     gradient: ["#3A0000", "#771E1E"],
-    url: "https://www.npmjs.com/package/ngx-quill-upload",
-    tech: ["npm", "angular", "typescript"],
+    url: "gomanga-api.vercel.app",
+    tech: ["next", "typescript", "tailwind", "mongodb"],
   },
   {
-    name: "Huminos website",
-    image: "/projects/huminos.jpg",
+    name: "CrimeScope - Las Pinas Barangay Crime Pattern Analysis [ THESIS ]",
+    image: "/projects/crimescope.jpg",
     blurImage: "/projects/blur/huminos-blur.jpg",
-    description: "Marketing site for Huminos bots for workplace by facebook",
+    description: "A depth banragay crime pattern analysis in las pinas.",
     gradient: ["#17007B", "#3A2C79"],
-    url: "https://bots.huminos.com/",
-    tech: ["javascript", "sass", "svg", "gulp"],
+    url: "https://crimescope.vercel.app",
+    tech: ["next", "typescript", "tailwind", "react", "javascript", "mongodb"],
   },
   {
-    name: "AKGEC - College Website",
-    image: "/projects/akgec.jpg",
+    name: "S1000RR",
+    image: "/projects/s1000rr.jpg",
     blurImage: "/projects/blur/akgec-blur.jpg",
-    description: "Contributed in overall design and development",
+    description: "A website that uses GSAP to showcase BMW motorcycle",
     gradient: ["#5E4C06", "#746528"],
-    url: "https://www.akgec.ac.in/",
-    tech: ["javascript", "html", "css"],
+    url: "https://s1000rr.vercel.app",
+    tech: ["next", "html", "css", "gsap", "tailwind"],
   },
   {
-    name: "Alpha Aesthetics",
-    image: "/projects/alpha.jpg",
+    name: "MyTots - A free journal for everyone",
+    image: "/projects/mytots.jpg",
     blurImage: "/projects/blur/alpha-blur.jpg",
-    description: "Designed and developed the platform",
+    description: "A journaling network where you can share your thoughts",
     gradient: ["#172839", "#334659"],
-    url: "https://alpha-aesthetics.ayushsingh.net/",
-    tech: ["illustrator", "javascript", "angular"],
+    url: "https://mytots.vercel.app/",
+    tech: ["next", "tailwind", "typescript", "mongodb"],
   },
   {
-    name: "Amantrya - Polling Web App",
-    image: "/projects/farewell18.jpg",
+    name: "Gym Management",
+    image: "/projects/gymmanagement.jpg",
     blurImage: "/projects/blur/farewell18-blur.jpg",
-    description: "Dark mode dated from 2017 🔥",
+    description: "A gym management that has roles to make gym owners lives easier",
     gradient: ["#142D46", "#2E4964"],
-    url: "https://farewell18.ayushsingh.net/",
+    url: "#",
     tech: ["javascript", "html", "css"],
   },
   {
-    name: "BDC 2018 Web Portal",
-    image: "/projects/bdc18.jpg",
+    name: "Classified - Class scheduling system for school [ SCHOOL PROJECT ]",
+    image: "/projects/classified.jpg",
     blurImage: "/projects/blur/bdc18-blur.jpg",
-    description: "Built the portal from zero to production 🚀",
+    description: "Class Scheduling system built for school project. Roles security and more",
     gradient: ["#470700", "#712A23"],
-    url: "https://bdc2018.ayushsingh.net/",
+    url: "https://classified.vercel.app/",
     tech: ["javascript", "html", "css"],
-  },
-  {
-    name: "Scrolls 2017 - Website",
-    image: "/projects/scrolls.jpg",
-    blurImage: "/projects/blur/scrolls-blur.jpg",
-    description: "Built the portal from zero to production 🚀",
-    gradient: ["#685506", "#7B6921"],
-    url: "https://scrolls-17.ayushsingh.net/",
-    tech: ["angular", "html", "css"],
-  },
-  {
-    name: "Cardize - Visiting Cards",
-    image: "/projects/cardize.jpg",
-    blurImage: "/projects/blur/cardize-blur.jpg",
-    description: "First web project! Custom visiting card generator",
-    gradient: ["#552A04", "#614023"],
-    url: "https://cardize.ayushsingh.net/",
-    tech: ["javascript", "html", "css"],
-  },
+  }
 ];
 
 export const SKILLS = {
   frontend: [
-    "javascript",
-    "react",
-    "redux",
     "next",
-    "angular",
+    "react",
+    "javascript",
+    "zustand",
     "gsap",
     "tailwind",
-    "sass",
-    "svg",
     "html",
     "css",
   ],
-  userInterface: ["figma", "sketch", "illustrator", "photoshop"],
-  other: ["git", "webpack", "gulp", "lightroom", "aftereffects"],
+  userInterface: ["figma", "canva"],
+  other: ["git", "vercel", "render"],
+  backend: ["nodejs", "mongodb"]
 };
 
 export enum Branch {
@@ -225,7 +193,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Discussed on Interaction to Next Paint (INP), a Google Core Web Vital metric",
     image: "/timeline/reactindia.svg",
-    slideImage: "/timeline/reactindia.jpg",
+    slideImage: "/timeline/s.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -243,7 +211,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Frontend Engineering @ Core team, solving problems around Livingroom device performance",
     image: "/timeline/hotstar.svg",
-    slideImage: "/timeline/hotstar.jpeg",
+    slideImage: "/timeline/s.jpeg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -261,7 +229,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Contributed to Server driven UI framework for powering experiences @ Flipkart Wholesale 😎",
     image: "/timeline/flipkart.svg",
-    slideImage: "/timeline/flipkart.gif",
+    slideImage: "/timeline/s.gif",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -282,7 +250,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Built solutions for employee engagement, productivity and performance 🎯",
     image: "/timeline/huminos.svg",
-    slideImage: "/timeline/huminos-freelance.jpg",
+    slideImage: "/timeline/ss-freelance.jpg",
     shouldDrawLine: true,
     alignment: Branch.RIGHT,
   },
@@ -292,7 +260,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle: "Motion Graphics content for Product Launch 🚀",
     image: "/timeline/octanner.svg",
-    slideImage: "/timeline/aftereffects.jpg",
+    slideImage: "/timeline/sffects.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -313,7 +281,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Worked on enterprise blockchain solutions for web. Transforming UI/UX and frontend framework. Built a design system.",
     image: "/timeline/dltlabs.svg",
-    slideImage: "/timeline/dlt-website.jpg",
+    slideImage: "/timeline/sbsite.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -324,7 +292,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "First job! 🥳 Product design and development for employee engagement chatbot suite for workplace by facebook",
     image: "/timeline/huminos.svg",
-    slideImage: "/timeline/huminos-website.jpg",
+    slideImage: "/timeline/ss-website.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -335,7 +303,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Spent 4 years laying the foundation of Frontend Engineering, UI/UX, and Fitness!",
     image: "/timeline/akgec.svg",
-    slideImage: "/timeline/farewell.jpg",
+    slideImage: "/timeline/sll.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -357,7 +325,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Represented a team of 39 talented developers. Served different roles of leadership, project management and delivery.",
     image: "/timeline/si.svg",
-    slideImage: "/timeline/si-head.jpg",
+    slideImage: "/timeline/sd.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -368,7 +336,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Guided 200 students to create their first animated SVG using CSS/SMIL at PHP Workshop, SDC-SI",
 
-    slideImage: "/timeline/svg-lecture.jpg",
+    slideImage: "/timeline/scture.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -386,7 +354,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "Competed against 20+ teams for design and development of web project from scratch",
-    slideImage: "/timeline/ims-17.jpg",
+    slideImage: "/timeline/s.jpg",
     shouldDrawLine: true,
     alignment: Branch.RIGHT,
   },
@@ -397,7 +365,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "Guided 200 students for javascript fundamentals at Game Development workshop, SDC-SI",
-    slideImage: "/timeline/js-17.jpg",
+    slideImage: "/timeline/sjpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -408,7 +376,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "Competed in web and graphic design challenge with 100+ participants.",
-    slideImage: "/timeline/abes-17.jpg",
+    slideImage: "/timeline/s7.jpg",
     shouldDrawLine: true,
     alignment: Branch.RIGHT,
   },
@@ -419,7 +387,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "Guided 300+ students on getting started with web technologies like HTML/CSS and JS",
-    slideImage: "/timeline/web-17.jpg",
+    slideImage: "/timeline/s.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -435,7 +403,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     title: "1st position in Web Designing, IMSU",
     size: ItemSize.SMALL,
     subtitle: "Secured 1st prize in Web design challenge against 50+ teams",
-    slideImage: "/timeline/ims-16.jpg",
+    slideImage: "/timeline/s.jpg",
     shouldDrawLine: true,
     alignment: Branch.RIGHT,
   },
@@ -456,7 +424,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Started journey in SDC-SI, where I learnt the fundamentals of Frontend, UI/UX, Graphic design and more...",
     image: "/timeline/si.svg",
-    slideImage: "/timeline/si-start.jpg",
+    slideImage: "/timeline/srt.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -474,7 +442,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Awarded as recognized themer,  Developed themes and ROMs for Xperia 2011 devices lineup with over 15k+ downloads. Featured on xda portal twice.",
     image: "/timeline/xda.svg",
-    slideImage: "/timeline/xda-rt.jpg",
+    slideImage: "/timeline/s.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -496,5 +464,3 @@ export interface CheckpointNode {
 export interface BranchNode {
   type: NodeTypes.CONVERGE | NodeTypes.DIVERGE;
 }
-
-export const GTAG = "UA-163844688-1";

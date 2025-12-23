@@ -1,9 +1,3 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 import { gsap, Linear } from "gsap";
 import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -46,13 +40,15 @@ const QuoteSection = () => {
     <div className="tall:py-60 py-72 section-container">
       <h1
         ref={quoteRef}
-        className={`font-medium text-4xl md:text-5xl text-center ${
-          willChange ? "will-change-opacity" : ""
-        }`}
+        className={`font-medium text-4xl md:text-5xl text-center ${willChange ? "will-change-opacity" : ""}`}
       >
-        I have a <span className="text-strong font-bold">strong</span> obsession
-        for attention to detail.
+        I’m passionate about building robust and scalable{" "}
+        <span className="text-strong font-bold">full-stack applications</span> and take pride in writing clean, efficient code
+        that solves real problems. With hands - on experience across multiple technologies, I strive to deliver solutions that
+        are both functional and maintainable .
       </h1>
+
+
     </div>
   );
 

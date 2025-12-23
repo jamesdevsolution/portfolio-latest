@@ -1,9 +1,3 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 import { MutableRefObject, useEffect, useRef, useState } from "react";
 import {
   Branch,
@@ -163,12 +157,12 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     const foreignObjectY = y - dotSize / 2;
     const foreignObjectWidth = svgWidth - (dotSize / 2 + 10 + offset);
 
-    const titleSizeClass = size === ItemSize.LARGE ? "text-6xl" : "text-2xl";
+    const titleSizeClass = size === ItemSize.LARGE ? "text-[#E43D12] text-6xl" : "text-[#E43D12] text-2xl";
     const logoString = image
       ? `<img src='${image}' class='h-8 mb-2' loading='lazy' width='100' height='32' alt='${image}' />`
       : "";
     const subtitleString = subtitle
-      ? `<p class='text-xl mt-2 text-gray-200 font-medium tracking-wide'>${subtitle}</p>`
+      ? `<p class='text-xl mt-2 text-black font-medium tracking-wide'>${subtitle}</p>`
       : "";
 
     return `<foreignObject x=${foreignObjectX} y=${foreignObjectY} width=${foreignObjectWidth} 
@@ -465,7 +459,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     >
       <Image
         className="w-full h-8"
-        src="/timeline/title-bar.svg"
+        src="/timeline/browserurl.png"
         alt="Title bar"
         width={644}
         height={34}
@@ -503,7 +497,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
       <p className="section-title-sm seq">MILESTONES</p>
       <h1 className="section-heading seq mt-2">Timeline</h1>
       <h2 className="text-2xl md:max-w-2xl w-full seq mt-2">
-        A quick recap of proud moments
+        A quick recap of how I started.
       </h2>
     </div>
   );

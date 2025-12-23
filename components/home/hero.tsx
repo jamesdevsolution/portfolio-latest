@@ -1,9 +1,3 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 import { EMAIL, MENULINKS, SOCIAL_LINKS, TYPED_STRINGS } from "../../constants";
 import React, { MutableRefObject, useEffect, useRef } from "react";
 import Typed from "typed.js";
@@ -14,12 +8,12 @@ import HeroImage from "./hero-image";
 
 const HERO_STYLES = {
   SECTION:
-    "w-full flex md:items-center py-8 section-container min-h-screen relative mb-24",
+    "w-full flex md:items-center py-8 section-container min-h-screen relative mb-24 ",
   CONTENT: "font-medium flex flex-col pt-32 md:pt-0 select-none",
-  SOCIAL_LINK: "link hover:opacity-80 duration-300 md:mr-4 mr-2",
+  SOCIAL_LINK: "flex items-center justify-center rounded bg-black p-1 link hover:opacity-80 duration-300 md:mr-4 mr-2",
   BG_WRAPPER:
-    "absolute hero-bg right-0 md:bottom-0 bottom-8 -z-1 md:w-3/4 w-full scale-125 sm:scale-100 flex items-end",
-  TYPED_SPAN: "text-xl sm:text-2xl md:text-4xl seq",
+    "absolute top-[-10%] md:top-0 right-[-40%] md:right-0 z-1 scale-[0.6] md:scale-[1]",
+  TYPED_SPAN: "text-xl sm:text-2xl md:text-4xl seq text-[#E43D12]",
 };
 
 const HeroSection = React.memo(() => {
@@ -81,15 +75,15 @@ const HeroSection = React.memo(() => {
 
   const renderHeroContent = (): React.ReactNode => (
     <div className={HERO_STYLES.CONTENT}>
-      <div className="md:mb-4 mb-2">
-        <h2 className="text-4xl seq">Hello 👋🏻</h2>
-        <h1 className="text-3xl seq">I am Ayush Singh</h1>
+      <div className="md:mb-4 mb-2 z-10 text-black">
+        <h2 className="text-4xl seq">Hewow!</h2>
+        <h1 className="text-3xl seq">I am James Talamo</h1>
       </div>
-      <p className="mb-4">
+      <p className="mb-4 z-10">
         <span className={HERO_STYLES.TYPED_SPAN} ref={typedSpanElement}></span>
       </p>
       <div className="flex seq mb-5">{renderSocialLinks()}</div>
-      <div className="flex seq">
+      <div className="flex seq z-10">
         <Button
           classes="mr-3"
           type={ButtonTypes.OUTLINE}
@@ -98,13 +92,13 @@ const HeroSection = React.memo(() => {
             target: "_blank",
             rel: "noreferrer",
           }}
-          href="/Ayush_Resume.pdf"
+          href="/James_Talamo.pdf"
         ></Button>
         <Button
           classes="ml-3"
           type={ButtonTypes.PRIMARY}
           name="Let's Talk"
-          href={SOCIAL_LINKS.topmate}
+          href={SOCIAL_LINKS.instagram}
           otherProps={{
             target: "_blank",
             rel: "noreferrer",

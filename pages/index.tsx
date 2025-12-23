@@ -1,8 +1,3 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
 
 import { METADATA } from "../constants";
 import Head from "next/head";
@@ -19,11 +14,10 @@ import HeroSection from "@/components/home/hero";
 import ProjectsSection from "@/components/home/projects";
 import QuoteSection from "@/components/home/quote";
 import SkillsSection from "@/components/home/skills";
-import CollaborationSection from "@/components/home/collaboration";
 import Footer from "@/components/common/footer";
 import TimelineSection from "@/components/home/timeline";
-import Scripts from "@/components/common/scripts";
 import AboutSection from "@/components/home/about";
+import Transition from "@/components/home/transition";
 
 const DEBOUNCE_TIME = 100;
 
@@ -72,23 +66,42 @@ export default function Home() {
     <>
       <Head>
         <title>{METADATA.title}</title>
+        <link rel="icon" type="image/png" href="ICON.png" />
       </Head>
       <Layout>
         <Header />
         <ProgressIndicator />
         <Cursor isDesktop={isDesktop} />
-        <main className="flex-col flex">
+        <main className="flex flex-col bg-[#EBE9E1]">
           {renderBackdrop()}
           <HeroSection />
+
+          <Transition text="" bold="Full Stack Developer" slideText="Full Stack Developer Full Stack Developer" />
+
           <AboutSection />
-          <ProjectsSection isDesktop={isDesktop} />
-          <QuoteSection />
+
+          <Transition text="" bold="My Technologies" slideText="Technologies Technologies Technologies Technologies" />
+
           <SkillsSection />
+
+
+          <Transition text="" bold="My Works" slideText="Works Works Works Works" />
+
+          <ProjectsSection isDesktop={isDesktop} />
+
+
+          <Transition text="" bold="My Journey" slideText="Timeline Timeline Timeline Timeline" />
+
           <TimelineSection isDesktop={isDesktop} />
-          <CollaborationSection />
+
+          {/* Human touch */}
+          <QuoteSection />
+
+          {/* Call to action */}
+          <Transition text="Please" bold="Collaborate with me :)" slideText="Collaborate with me! Collaborate with me!" />
+
           <Footer />
         </main>
-        <Scripts />
       </Layout>
     </>
   );
