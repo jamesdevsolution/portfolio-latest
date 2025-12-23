@@ -156,6 +156,7 @@ export const SKILLS = {
     "tailwind",
     "html",
     "css",
+    "sass"
   ],
   userInterface: ["figma", "canva"],
   other: ["git", "vercel", "render"],

@@ -58,7 +58,7 @@ const SkillsSection = () => {
     <>
       <h3 className={SKILL_STYLES.SKILL_TITLE}>{title}</h3>
       {/* <h3 className="text-black">{title}</h3> */}
-      <div
+      {/* <div
         className={`flex flex-wrap seq ${willChange ? "will-change-opacity" : ""
           }`}
       >
@@ -72,7 +72,25 @@ const SkillsSection = () => {
             className="skill"
           />
         ))}
+      </div> */}
+      <div className={`flex flex-wrap seq ${willChange ? "will-change-opacity" : ""}`}>
+        {skills.map((skill) => {
+          // Hardcoded condition to use PNG for 'react' and SVG for others
+          const fileExtension = skill === 'render' || skill === 'canva' ? 'png' : 'svg';  
+
+          return (
+            <Image
+              key={skill}
+              src={`/skills/${skill}.${fileExtension}`} 
+              alt={skill}
+              width={76}
+              height={76}
+              className="skill"
+            />
+          );
+        })}
       </div>
+
     </>
   );
 
