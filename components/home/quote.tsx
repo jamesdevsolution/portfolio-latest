@@ -82,7 +82,7 @@ const QuoteSection = () => {
       scrollTrigger: {
         trigger: targetSection.current,
         start: "top top",
-        end: "bottom+=500 top",
+        end: "bottom top",
         scrub: 1,
         pin: true,
         onToggle: (self) => setWillChange(self.isActive),

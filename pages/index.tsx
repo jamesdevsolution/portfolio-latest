@@ -88,15 +88,13 @@ export default function Home() {
           <Transition text="" bold="My Works" slideText="Works Works Works Works Works Works Works Works Works Works Works Works" />
 
           <ProjectsSection isDesktop={isDesktop} />
-         
+
           <TimelineSection isDesktop={isDesktop} />
 
           {/* Human touch */}
           <QuoteSection />
 
-          <div className='w-[100vw] h-[1500px]'>
-
-          </div>
+          <div className='w-[100vw] h-[250vh]'></div>
           {/* Call to action */}
           <Transition text="" bold="Please Collaborate with me :)" slideText="Collaborate Collaborate Collaborate Collaborate Collaborate Collaborate" />
 
