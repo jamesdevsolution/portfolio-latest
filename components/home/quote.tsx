@@ -82,10 +82,14 @@ const QuoteSection = () => {
       scrollTrigger: {
         trigger: targetSection.current,
         start: "top top",
-        end: "bottom top",
+        end: "bottom+=1000 top",
         scrub: 1,
         pin: true,
         onToggle: (self) => setWillChange(self.isActive),
+        // markers: {
+        //   startColor: "green",
+        //   endColor: "red"
+        // }
       }
     });
 

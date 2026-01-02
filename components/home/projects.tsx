@@ -9,7 +9,7 @@ const PROJECT_STYLES = {
   SECTION:
     "w-full relative select-none section-container flex-col flex py-8 justify-center",
   PROJECTS_WRAPPER:
-    "tall:mt-12 mt-6 grid grid-flow-col auto-cols-max md:gap-10 gap-6 project-wrapper w-fit seq snap-x scroll-pl-6 snap-mandatory",
+    "mt-6 grid grid-flow-col auto-cols-max md:gap-10 gap-6 project-wrapper w-fit seq snap-x scroll-pl-6 snap-mandatory",
 };
 
 const ProjectsSection = ({ isDesktop }: IDesktop) => {
@@ -20,6 +20,8 @@ const ProjectsSection = ({ isDesktop }: IDesktop) => {
   const [horizontalAnimationEnabled, sethorizontalAnimationEnabled] =
     useState(false);
 
+
+  //Reveal lang animation
   const initRevealAnimation = (
     targetSectionRef: MutableRefObject<HTMLDivElement>
   ): [GSAPTimeline, ScrollTrigger] => {
@@ -33,8 +35,8 @@ const ProjectsSection = ({ isDesktop }: IDesktop) => {
     const scrollTrigger = ScrollTrigger.create({
       trigger: targetSectionRef.current,
       start: "top bottom",
-      end: "bottom bottom",
-      scrub: 0,
+      end: "bottom bottom+=500",
+      scrub: 1,
       animation: revealTl,
     });
 
@@ -66,8 +68,12 @@ const ProjectsSection = ({ isDesktop }: IDesktop) => {
       scrub: 0,
       pin: true,
       animation: timeline,
-      pinSpacing: "margin",
+      pinSpacing: true,
       onToggle: (self) => setwillChange(self.isActive),
+      // markers: {
+      //   startColor: 'green',
+      //   endColor: "red"
+      // }
     });
 
     return [timeline, scrollTrigger];
@@ -155,7 +161,7 @@ const ProjectsSection = ({ isDesktop }: IDesktop) => {
       id={projectsSectionRef}
     >
       {renderSectionTitle()}
-      <div className={PROJECT_STYLES.PROJECTS_WRAPPER }>
+      <div className={PROJECT_STYLES.PROJECTS_WRAPPER}>
         {renderProjectTiles()}
       </div>
     </section>

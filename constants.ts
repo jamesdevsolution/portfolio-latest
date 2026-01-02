@@ -160,7 +160,7 @@ export const SKILLS = {
   ],
   userInterface: ["figma", "canva"],
   other: ["git", "vercel", "render"],
-  backend: ["next","nodejs", "mongodb"]
+  backend: ["next", "nodejs", "mongodb"]
 };
 
 export enum Branch {
@@ -189,16 +189,172 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Speaker at React India",
+    title: "Started Learning HTML, CSS & JavaScript",
     size: ItemSize.SMALL,
     subtitle:
-      "Discussed on Interaction to Next Paint (INP), a Google Core Web Vital metric",
-    image: "/timeline/reactindia.svg",
-    slideImage: "/timeline/s.jpg",
+      "Started my web development journey by learning HTML, CSS, and JavaScript from the fundamentals.",
+    image: "/timeline/1st.png",
+    slideImage: "/timeline/1st.png",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
-  }
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Started Using Node.js for Backend",
+    size: ItemSize.SMALL,
+    subtitle:
+      "In February, I began learning Node.js and backend fundamentals like servers, APIs, and databases.",
+    image: "/timeline/2nd.png",
+    slideImage: "/timeline/2nd.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Built First Full-Stack Application",
+    size: ItemSize.SMALL,
+    subtitle:
+      "In April, I built my first full-stack application using frontend, backend, and database together.",
+    image: "/timeline/3rd.png",
+    slideImage: "/timeline/3rd.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Started Learning React",
+    size: ItemSize.SMALL,
+    subtitle:
+      "In October, I started learning React and modern frontend concepts like components, hooks, and state.",
+    image: "/timeline/4th.png",
+    slideImage: "/timeline/4th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Built First Anime Website",
+    size: ItemSize.SMALL,
+    subtitle:
+      "In November, I built my first anime website using React and applied everything I had learned so far.",
+    image: "/timeline/5th.png",
+    slideImage: "/timeline/5th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+
+  /* ===================== 2024 ===================== */
+
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "2024",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Built NGL Clone",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Built an anonymous messaging platform inspired by NGL, focusing on backend APIs, authentication, and real-world MERN workflows.",
+    image: "/timeline/6th.png",
+    slideImage: "/timeline/6th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Built X (Twitter) Clone",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Cloned core features of X (Twitter) including posts, user profiles, and interactions using the MERN stack.",
+    image: "/timeline/7th.png",
+    slideImage: "/timeline/7th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Built Threads Clone",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Built a Threads-inspired social app with a focus on clean UI, component-driven React architecture, and scalable backend APIs.",
+    image: "/timeline/8th.png",
+    slideImage: "/timeline/8th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+
+  /* ===================== 2025 ===================== */
+
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "2025",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Migrated to Full Next.js Stack",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Transitioned all applications to Next.js, adopting App Router, server components, and modern full-stack patterns.",
+    image: "/timeline/9th.png",
+    slideImage: "/timeline/9th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Built BMW Motorcycle Website Using GSAP",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Created a high-performance animated website for BMW Motorcycles using GSAP and advanced scroll-based animations.",
+    image: "/timeline/10th.png",
+    slideImage: "/timeline/10th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Started Learning WebSockets",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Started working with WebSockets to build real-time chat applications and live data experiences.",
+    image: "/timeline/11th.png",
+    slideImage: "/timeline/11th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Building Backend APIs for Manga & Manhwa",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Developing scalable backend APIs for manga and manhwa content that power my frontend applications.",
+    image: "/timeline/12th.png",
+    slideImage: "/timeline/12th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Exploring Crypto & Web3 Gaming",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Started exploring crypto and Web3 concepts with the help of a friend by participating in the blockchain-based game Gods Unchained, learning about wallets, NFTs, and on-chain assets.",
+    image: "/timeline/13th.png",
+    slideImage: "/timeline/13th.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
 ];
+
+
+
+
 // export const TIMELINE: Array<TimelineNodeV2> = [
 //   {
 //     type: NodeTypes.CHECKPOINT,
